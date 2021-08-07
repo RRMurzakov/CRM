@@ -31,6 +31,7 @@ if ($result = mysqli_query($db, "SELECT `username` FROM `users` WHERE `username`
 <body>
 
   <form method="post" action="" class="login">
+    <h1>Авторизация в CRM</h1>
     <p>
       <label for="login">Логин:</label>
       <input type="text" name="username_input" id="login" >
