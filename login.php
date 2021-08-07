@@ -33,12 +33,12 @@ if ($result = mysqli_query($db, "SELECT `username` FROM `users` WHERE `username`
   <form method="post" action="" class="login">
     <p>
       <label for="login">Логин:</label>
-      <input type="text" name="username_input" id="login" value="Логин">
+      <input type="text" name="username_input" id="login" >
     </p>
 
     <p>
       <label for="password">Пароль:</label>
-      <input type="password" name="password_input" id="password" value="4815162342">
+      <input type="password" name="password_input" id="password" >
     </p>
 
     <p class="login-submit">
