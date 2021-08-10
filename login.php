@@ -14,7 +14,8 @@ $username_input = $_POST['username_input'];
 $password_input = $_POST['password_input'];
 if ($result = mysqli_query($db, "SELECT `username` FROM `users` WHERE `username`='" . $username_input . "' and `password`='" . $password_input . "'")) {
         if( mysqli_num_rows($result) == 1) { 
-                echo "Аккаунт подтверждён";
+               mysqli_close($db);
+			   require_once 'table.php';
             } else {
                 echo "Что то пошло не так";
             }
